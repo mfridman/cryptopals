@@ -12,7 +12,7 @@ func main() {
 	s1 := "1c0111001f010100061a024b53535009181c"
 	s2 := "686974207468652062756c6c277320657965"
 
-	res := fixedXOR(
+	res := decrypt(
 		hexStringToBytes(s1),
 		hexStringToBytes(s2),
 	)
@@ -29,7 +29,7 @@ func hexStringToBytes(s string) []byte {
 	return msg
 }
 
-func fixedXOR(a, b []byte) []byte {
+func decrypt(a, b []byte) []byte {
 	if len(a) != len(b) {
 		return nil
 	}

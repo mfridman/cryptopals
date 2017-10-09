@@ -40,7 +40,7 @@ func main() {
 
 	for _, j := range ASCII {
 		go func(b byte) {
-			msg := decode(b, encoded)
+			msg := decrypt(b, encoded)
 			c <- msg
 			wg.Done()
 		}(j)
@@ -78,7 +78,7 @@ func hexStringToBytes(s string) []byte {
 	return msg
 }
 
-func decode(k byte, enc []byte) message {
+func decrypt(k byte, enc []byte) message {
 	var dec []byte
 
 	for _, j := range enc {
