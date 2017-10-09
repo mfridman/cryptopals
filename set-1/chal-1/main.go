@@ -1,3 +1,5 @@
+// Convert hex to base64
+
 package main
 
 import (
