@@ -1,21 +1,28 @@
-# [Cryptopals crypto challenges](https://cryptopals.com/)
+# [Cryptopals](https://cryptopals.com/) [![Report Card](https://goreportcard.com/badge/github.com/mfridman/cryptopals)](https://goreportcard.com/report/github.com/mfridman/cryptopals)
 
-Work in progress...
+> crypto challenges made fun
 
-## set 1: Basics
+Chipping away at em', work in progress...
 
-- [x] [Convert hex to base64](https://cryptopals.com/sets/1/challenges/1)
-- [x] [Fixed XOR](https://cryptopals.com/sets/1/challenges/2)
-- [x] [Single-byte XOR cipher](https://cryptopals.com/sets/1/challenges/3)
-- [x] [Detect single-character XOR](https://cryptopals.com/sets/1/challenges/4)
-- [x] [Implement repeating-key XOR](https://cryptopals.com/sets/1/challenges/5)
-- [x] [Break repeating-key XOR](https://cryptopals.com/sets/1/challenges/6)
+Indeed there is overlap between the challenges and one could build a standard lib. But, instead, I wanted each challenge to be its own contained unit.
 
-Here things start to get interesting. hamming distance/edit distance:
+## Usage
 
-- minimum # of operations (ins, del, sub) needed to transform one str into the other 
+`go get -u github.com/mfridman/cryptopals/...`
+```bash
+# assuming you are in your GOPATH
+cd src/github.com/mfridman/cryptopals/set-1/chal-6
+go run main.go
+```
 
+## Set 1: Basics
 
+- [x] **[solution](set-1/chal-1)** ........ [Convert hex to base64](https://cryptopals.com/sets/1/challenges/1)
+- [x] **[solution](set-1/chal-2)** ........ [Fixed XOR](https://cryptopals.com/sets/1/challenges/2)
+- [x] **[solution](set-1/chal-3)** ........ [Single-byte XOR cipher](https://cryptopals.com/sets/1/challenges/3)
+- [x] **[solution](set-1/chal-4)** ........ [Detect single-character XOR](https://cryptopals.com/sets/1/challenges/4)
+- [x] **[solution](set-1/chal-5)** ........ [Implement repeating-key XOR](https://cryptopals.com/sets/1/challenges/5)
+- [x] **[solution](set-1/chal-6)** ........ [Break repeating-key XOR](https://cryptopals.com/sets/1/challenges/6)
 - [ ] [AES in ECB mode](https://cryptopals.com/sets/1/challenges/7)
 - [ ] [Detect AES in ECB mode](https://cryptopals.com/sets/1/challenges/8)
 
